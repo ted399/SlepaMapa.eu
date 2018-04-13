@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slepa Mapa</title>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,700" rel="stylesheet">
+
+</head>
+<body>
+
+<!--MAPA-->
+
+
+
+	<div id="nav">
+		<img  class="img-responsive logo" src="smlogo.png">
+    <ul>
+      <li><button class="menu-button">MĚSTA</button></li>
+      <li><button class="menu-button"><a href="evropa.html">STÁTY EVROPY</a></button></li>
+      <li><button class="menu-button">O PROJEKTU</button></li>
+    </ul>
+	</div>
+
+    <div class="container-right">
+      <div class="prehled-mapy">
+        <div id="nazevmapy">
+
+        </div>
+        <ul id="lokace-ul">
+
+        </ul>
+      </div>
+      <div class="form-holder">
+        <form id="addmap-form" class="form" action="index.html" method="post">
+          <input type="text" name="nazevmapy" value="">
+          <input name="lokace" type="text" value="">
+          <input name="nazevlokace" type="text" value="">
+          <input name="lat" type="text" value="">
+          <input name="lng"  value="">
+          <input type="submit" name="" value="Submit">
+        </form>
+        <button id="add-more-button" class="hide" type="button" name="button">Pridej dalsi lokaci</button>
+      </div>
+    </div>
+		<!--END OF MAPA-->
+
+    <!--MOBILE-->
+    <div class="mobile-full parent">
+        <div class="child mobile-full-inner">
+            <img  class="logo-mobile" src="smlogo.png">
+            <p class="mobile-paragraph">Na mobilní verzi aplikace stále ještě pracujeme.<br>Pokud můžete, zvětšte okno prohlížeče a aplikace bude dostupná.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKBe4yPQN0GbayaWskCbjWjRJGWbXpyI4&libraries=geometry">
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    <script type="text/javascript" src="js/addmap.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
